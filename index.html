@@ -2,8 +2,16 @@
 layout: default
 ---
 
+    <head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	
+	<body> 
+		<b class="ampstart-fullpage-hero-heading-text">  {{ site.parameters.description }}  </b>
+	
+	</body>
 
-  <figure >
+  
     <amp-img width="404" height="720" alt="Cover" layout="responsive" src="{{ site.baseurl }}{{ site.cover }}" media="(max-width: 415px)"></amp-img>
     <amp-img height="720" alt="Cover" layout="fixed-height" src="{{ site.baseurl }}{{ site.cover }}" media="(min-width: 416px)"></amp-img>
     <figcaption class="absolute top-0 right-0 bottom-0 left-0">
@@ -21,7 +29,7 @@ layout: default
 		
 		
 		
-		<b class="ampstart-readmore-text">  {{ site.parameters.description }}  </b>
+		<b class="amp-img">  {{ site.parameters.description }}  </b>
 
     </header>
     {% if site.cover %}
@@ -36,7 +44,7 @@ layout: default
     </figcaption>
   </figure>
 
-<main id="content" role="main" class="content">
+
 
   <div class="cf frame">
     {% for post in paginator.posts %}
@@ -73,7 +81,7 @@ layout: default
     {% endfor %}
   </div>
 
-  <nav class="pagination" role="navigation">
+  
     {% if paginator.next_page %}
       <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older posts</a>
     {% else %}
@@ -91,6 +99,5 @@ layout: default
     {% endif %}
   </nav>
 
-</main>
 
-{% include footer.html %}
+
