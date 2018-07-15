@@ -3,3 +3,9 @@
 
 - title: About
   url: about
+  
+- title: Introduction
+  url: introduction.html
+
+- title: Configuration
+  url: configuration.html
