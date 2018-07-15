@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Site settings
 title: Hanuman
 description: Hanuman is a minimal yet powerful Jekyll theme for your blogs and websites.
@@ -56,3 +57,6 @@ exclude:
   - "*.Rmd"
   - vendor
   - .travis.yml
+=======
+theme: jekyll-theme-cayman
+>>>>>>> 516469a35384cd2ad9dc418e8562a53566dc74ba
